@@ -141,20 +141,17 @@ body {
         background-image: url("/img/LandingPage_1400.png");
     }
     .main-title{
-        font-family: 'Racing Sans One', cursive;
-        color: var(--cf-light);
-        font-weight: 700;
-        font-style: italic;
-        line-height: 1.7rem;
-        letter-spacing: .2rem;
-        text-transform: uppercase;
         
+        font-size: 2.25rem;
     }
     
     .subtitle {
         font-family: 'Fira Sans', sans-serif;
         color: var(--cf-light);
     
+    }
+    #callToAction{
+        margin-left: 5rem;
     }
 }
 
@@ -164,20 +161,17 @@ body {
         background-image: url("/img/LandingPage_1920.png");
     }
     .main-title{
-        font-family: 'Racing Sans One', cursive;
-        color: var(--cf-light);
-        font-weight: 700;
-        font-style: italic;
-        line-height: 1.7rem;
-        letter-spacing: .2rem;
-        text-transform: uppercase;
         
+        font-size: 2.25rem;
     }
     
     .subtitle {
         font-family: 'Fira Sans', sans-serif;
         color: var(--cf-light);
     
+    }
+    #callToAction{
+        margin-left: 5rem;
     }
 }
 
