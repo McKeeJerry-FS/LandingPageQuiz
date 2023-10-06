@@ -60,6 +60,7 @@ body {
 #titles{
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
     margin-top: 38rem;
 }
 
@@ -80,7 +81,12 @@ body {
 @media (min-width: 576px) {
     body {
         background-image: url("/img/LandingPage_768.png");
-        /* background-size: cover; */
+    }
+    #titles{
+        /* display: flex;
+        flex-direction: row; */
+        align-items: center;
+        justify-content: start;
     }
 }
 
@@ -88,6 +94,11 @@ body {
 @media (min-width: 768px) {
     body {
         background-image: url("/img/LandingPage_992.png");
+    }
+    #titles{
+        display: flex;
+        align-items: center;
+        justify-content: start;
     }
 }
 
