@@ -12,6 +12,7 @@ body {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     background-image: url("/img/LandingPage_576.png");
@@ -19,7 +20,6 @@ body {
     background-position: right;
     background-size:cover;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -40,29 +40,25 @@ body {
     height: 2.5rem;
 }
 
-#mainText{
+.main-title{
     font-family: 'Racing Sans One', cursive;
     color: var(--cf-light);
     font-weight: 700;
     font-style: italic;
-    line-height: 1.4rem;
+    line-height: 1.7rem;
     letter-spacing: .2rem;
     text-transform: uppercase;
+    font-size: 2em;
+    
 }
 
-#subText{
-    font-family: 'Roboto', sans-serif;
+.subtitle {
+    font-family: 'Fira Sans', sans-serif;
     color: var(--cf-light);
-    text-transform: uppercase;
-    line-height: 1rem;
+
 }
 
-#titles{
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-top: 38rem;
-}
+
 
 #start_btn{
     background-color: var(--cf-highlight);
@@ -71,6 +67,9 @@ body {
     font-weight: 700;
 }
 
+#callToAction{
+    margin-left: 1rem;
+}
 
 /* #region Media Queries */
 
@@ -82,23 +81,37 @@ body {
     body {
         background-image: url("/img/LandingPage_768.png");
     }
-    #titles{
-        /* display: flex;
-        flex-direction: row; */
-        align-items: center;
-        justify-content: start;
+    .main-title{
+        
+        font-size: 2.25rem;
+    }
+    
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        color: var(--cf-light);
+    
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
-        background-image: url("/img/LandingPage_992.png");
+        background-image: url("/img/LandingPage_768.png");
     }
-    #titles{
-        display: flex;
-        align-items: center;
-        justify-content: start;
+    .main-title{
+        
+        font-size: 2.25rem;
+        line-height: 2rem;
+    }
+    
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        color: var(--cf-light);
+        font-size: 1.1rem;
+    
+    }
+    #callToAction{
+        margin-left: 5rem;
     }
 }
 
@@ -107,6 +120,19 @@ body {
     body {
         background-image: url("/img/LandingPage_1200.png");
     }
+    .main-title{
+        
+        font-size: 2.25rem;
+    }
+    
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        color: var(--cf-light);
+    
+    }
+    #callToAction{
+        margin-left: 5rem;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -114,12 +140,44 @@ body {
     body {
         background-image: url("/img/LandingPage_1400.png");
     }
+    .main-title{
+        font-family: 'Racing Sans One', cursive;
+        color: var(--cf-light);
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.7rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        
+    }
+    
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        color: var(--cf-light);
+    
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     body {
         background-image: url("/img/LandingPage_1920.png");
+    }
+    .main-title{
+        font-family: 'Racing Sans One', cursive;
+        color: var(--cf-light);
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.7rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        
+    }
+    
+    .subtitle {
+        font-family: 'Fira Sans', sans-serif;
+        color: var(--cf-light);
+    
     }
 }
 
