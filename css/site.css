@@ -14,9 +14,13 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
+    background-image: url("/img/LandingPage_576.png");
+    background-color: var(--cf-darkblue);
+    background-position: right;
+    background-size:cover;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .content {
@@ -25,4 +29,87 @@ body {
 
 .footer {
     flex-shrink: 0;
+    color: var(--cf-light);
 }
+
+#footer_text{
+    color: var(--cf-light);
+}
+
+#rocket_logo{
+    height: 2.5rem;
+}
+
+#mainText{
+    font-family: 'Racing Sans One', cursive;
+    color: var(--cf-light);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.4rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+#subText{
+    font-family: 'Roboto', sans-serif;
+    color: var(--cf-light);
+    text-transform: uppercase;
+    line-height: 1rem;
+}
+
+#titles{
+    display: flex;
+    flex-direction: column;
+    margin-top: 38rem;
+}
+
+#start_btn{
+    background-color: var(--cf-highlight);
+    color: var(--cf-dark);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+/* #region Media Queries */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        background-image: url("/img/LandingPage_768.png");
+        /* background-size: cover; */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-image: url("/img/LandingPage_992.png");
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url("/img/LandingPage_1200.png");
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url("/img/LandingPage_1400.png");
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+    }
+}
+
+/* #endregion Media Queries */
